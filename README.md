@@ -11,3 +11,12 @@
 - rmdir
 - rm
 - mv
+
+##Git
+- 초기환경 설정
+  - git config --global user.name
+  - git config --global user.name
+- git init
+- git status
+- git add
+- git commit -m
