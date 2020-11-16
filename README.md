@@ -20,3 +20,5 @@
 - git status
 - git add
 - git commit -m(커밋 메시지 작성)
+- git log --oneline
+- git push -u origin main(새로 추가)
