@@ -93,3 +93,71 @@ html{
       background-repeat: no-repeat;
       background-position: 50% 50%;
 }
+
+/* 네비게이션 */
+.app-navigation{
+    background-color: darkblue;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* width: 100%;
+    height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 10px;
+    
+}
+   
+}
+
+.reset-list{
+    
+    margin-top: 70px;
+    margin-left: 20px;
+    padding: 11.5px; 
+    border-top: 0.3px solid grey; */
+}
+
+.app-navigation ul{
+    /* background-color: green; */
+    width: 100%;
+    margin-top: 10px;
+    border
+}
+
+.app-navigation a{
+    display: block;
+    padding: 10px;
+    transition: all 0.4s ease;
+}
+
+.app-navigation a:hover,
+.app-navigation a:focus {
+  background: #2e437c;
+}
+
+
+.app-navigation li{
+    border-bottom: 1px solid #f5f4fb;
+}
+
+.is-close-menu{
+    order: -1;
+    background-color: transparent;
+    padding: 18px;
+
+}
+
+.is-close-menu .close{
+    color: white;
+
+    
+
+}
