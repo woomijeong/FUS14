@@ -112,10 +112,14 @@ html{
     align-items: flex-start;
     align-content: flex-start;
     padding: 10px;
+    transition: all 0.4s cubic-bezier(0.66,-0.01,0.3,0.99);
+    transform: translate(105vw);
     
 }
    
-}
+.app-navigation.is-active {
+    transform: translateX(0);
+  }
 
 .reset-list{
     
