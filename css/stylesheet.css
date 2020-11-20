@@ -165,3 +165,22 @@ html{
     
 
 }
+/* 메인 콘텐츠 */
+.app-main{
+  background-color: yellow;
+}
+.ediya-menu figure{
+  width: 200px;
+  background-color: lime;
+}
+.ediya-menu img{
+  border : 1px solid red;
+  max-width: 100%;
+  height: auto;
+}
+
+@media all and (min-width: 768px){
+  .app-main{
+    background-color: pink;
+  }
+}
