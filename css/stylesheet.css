@@ -67,6 +67,9 @@ html{
       justify-content: space-between;
       align-items: stretch;
       border-bottom: 1px solid #f5f4fb;
+      position: sticky;
+      top: 0;
+      z-index: 500;
       
   }
   /* 브랜드 로고 */
@@ -103,6 +106,7 @@ html{
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1000;
     /* width: 100%;
     height: 100vh; */
     display: flex;
@@ -126,7 +130,7 @@ html{
     margin-top: 70px;
     margin-left: 20px;
     padding: 11.5px; 
-    border-top: 0.3px solid grey; */
+    /* border-top: 0.3px solid grey;  */
 }
 
 .app-navigation ul{
@@ -182,10 +186,13 @@ html{
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
+  
 }
 .ediya-menu__item{
   width: 100%;
+  min-width: 280px;
   background-color: #f5f5f5;
+  position: relative;
 }
 .ediya-menu__item:nth-child(n+2){
   margin-top: 20px;
@@ -196,6 +203,7 @@ html{
   padding-bottom: 40px;
   color: inherit;
   text-decoration: none;
+  
 
 }
 
@@ -218,15 +226,71 @@ html{
   transform: scale(1);
   
 }
+/* 음료 상세 정보 */
+  
+.ediya-menu__item--detail{
+  background-color: rgba(204, 204, 204, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px 20px;
+  border: 1px solid #202023;
+}
+.ediya-menu__item--name{
+  /* background-color: pink; */
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-bottom: 1px solid #202023;
+  padding-bottom: 10px;
+}
+.ediya-menu__item--name span[lang="en"]{
+  display: block;
+  font-size: 1.4rem;
+  color: #999999;
+}
+.ediya-menu__item--multi-column{
+  column-count: 2; 
+  column-rule: 1px solid #000000;
+  background-color: #eeeeee;
+  padding: 20px 20px 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
+}
+.ediya-menu__item--multi-column dl{
+  margin: 0;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.ediya-menu__item--multi-column dt,
+.ediya-menu__item--multi-column dd{
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  font-size: 1.3rem;
+
+}
+.ediya-menu__item--detail .is-close-panel{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+}
 @media all and (min-width: 768px){
   .ediya-menu{
-   width: 526px;
+   width: 89.84375%;
+   max-width: 1720px;
   }
 
   .ediya-menu__item{
-    width: 248px;
+    width: 47.826087%;
   
   }
   .ediya-menu__item:nth-child(2){
