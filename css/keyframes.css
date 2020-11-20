@@ -1,0 +1,52 @@
+@keyframes opacity-effect{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.opacity-effect{
+    border: 1px solid pink;
+    display: flex;
+}
+.opacity-effect img{
+    width: 12.5%;
+    animation-name: opacity-effect;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    opacity: 0;
+}
+
+.img2{
+    animation-delay: 300ms;
+ 
+}
+.img3{
+    animation-delay: 600ms;
+ 
+}
+
+.img4{
+    animation-delay: 900ms;
+ 
+}
+
+.img5{
+    animation-delay: 1200ms;
+ 
+}
+.img6{
+    animation-delay: 1500ms;
+ 
+}
+
+.img7{
+    animation-delay: 1800ms;
+
+}
+
+.img8{
+    animation-delay: 1800ms;
